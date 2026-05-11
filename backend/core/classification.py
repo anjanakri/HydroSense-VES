@@ -17,3 +17,15 @@ def classify_curve(apparent_res: np.ndarray)->str:
     else:
         return "Unknown"
         
+def classify_water_quality(apparent_res: np.ndarray)->str:
+    min_res=np.min(apparent_res)
+    #checking
+    #INTW if min_res>
+    if min_res>100:
+        return "Fresh Water"
+    elif min_res>30:
+        return "Slightly Saline"
+    elif min_res > 10:
+        return "Moderately Saline"
+    else:
+        return "Highly Saline"

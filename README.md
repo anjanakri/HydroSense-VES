@@ -14,4 +14,3 @@ Schlumberger Vertical Electrical Sounding (VES) Analysis Tool for Groundwater Ex
 ## Tech Stack
 - Backend: FastAPI + Python
 - Computation: NumPy + SciPy
-

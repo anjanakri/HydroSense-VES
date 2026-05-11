@@ -10,7 +10,7 @@ class VESReading(BaseModel):
     @field_validator('ab')
     def ab_positive(cls, v):
         if v<=0:
-            raise ValueError("Oops! AB/2 must me greater than 0")
+            raise ValueError("Oops! AB/2 must be greater than 0")
         return v
     
     @field_validator('mn')
